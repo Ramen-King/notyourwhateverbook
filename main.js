@@ -14,30 +14,28 @@ function searchButton(event){
     //check if userinput equals to property value
    
     for(let i = 0; i < sodas.length; i++){
-        if(userInput === sodas[i].brand);
-        appendToUL(sodas[i]);
+        if(userInput.includes(sodas[i].brand[i])) {
+            appendToUL(sodas[i]);
+        }
     }
     
 }
 
-function appendToUL(sodas){
+function appendToUL(event){
+    event.preventDefault()
     
-    const ul = document.querySelector('#list');
-    
-    const newLi = document.createElement('li');
-    newLi.innerText = `Brand: ${sodas.brand}`
+    const newP = document.createElement('p');
+    newP.innerText = `Brand: ${sodas.brand}`
     ul.appendChild(newLi);
     
-    const newLi2 = document.createElement('li');
-    newLi2.innerText = `Sugar: ${sodas.sugar}`
-    ul.appendChild(newLi2);
+    const newP2 = document.createElement('p');
+    newP2.innerText = `Sugar: ${sodas.sugar}`
+    ul.appendChild(newP2);
 
-    const newLi3 = document.createElement('li');
-    newLi3.innerText = `Calories: ${sodas.calories}`
-    ul.appendChild(newLi3);
+    const newP3 = document.createElement('p');
+    newP3.innerText = `Calories: ${sodas.calories}`
+    ul.appendChild(newP3);
     
 }
 
-function displayAll(){
-    
-}
+
