@@ -1,30 +1,30 @@
-const data = [
+const sodas = [
     {
-        soda: 'Coke',
+        brand: 'Coke',
         diet: false,
         sugar: '60mg',
         calories: '240cal',
     },
     {
-        soda:'Sprite',
+        brand:'Sprite',
         diet: false,
         sugar: '55mg',
         calories: '220cal',
     },
     {
-        soda: 'Sunkist',
+        brand: 'Sunkist',
         diet: false,
         sugar: '47mg',
         calories: '230cal',
     },
     {
-        soda: 'Diet Coke',
+        brand: 'Diet Coke',
         diet: true,
         sugar: '10mg',
         calories: '110cal'
     },
     {
-        soda: 'Dr Pepper',
+        brand: 'Dr Pepper',
         diet: false,
         sugar: '60mg',
         calories: '210cal'
