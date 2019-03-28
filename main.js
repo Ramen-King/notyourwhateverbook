@@ -21,12 +21,11 @@ function searchButton(event){
     
 }
 
-function appendToUL(event){
-    event.preventDefault()
-    
+function appendToUL(sodas){
+    const ul = document.querySelector('#list');
     const newP = document.createElement('p');
     newP.innerText = `Brand: ${sodas.brand}`
-    ul.appendChild(newLi);
+    ul.appendChild(newP);
     
     const newP2 = document.createElement('p');
     newP2.innerText = `Sugar: ${sodas.sugar}`
@@ -38,4 +37,9 @@ function appendToUL(event){
     
 }
 
-
+function displayAll(event) {
+    event.preventDefault();
+    for(let i = 0; i < sodas.length; i++){
+        appendToUL(sodas[i]);
+    }
+}
